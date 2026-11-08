@@ -5,16 +5,32 @@ const burger = document.getElementById('navBurger');
 const navLinks = document.getElementById('navLinks');
 
 if (burger && navLinks) {
+  const closeNav = () => {
+    navLinks.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  };
+
   burger.addEventListener('click', () => {
     const open = navLinks.classList.toggle('open');
     burger.setAttribute('aria-expanded', String(open));
   });
 
   navLinks.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', closeNav);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeNav();
+  });
+
+  document.addEventListener('click', (event) => {
+    if (
+      navLinks.classList.contains('open') &&
+      !navLinks.contains(event.target) &&
+      !burger.contains(event.target)
+    ) {
+      closeNav();
+    }
   });
 }
 

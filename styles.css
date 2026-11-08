@@ -98,9 +98,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
+  overflow-x: clip;
   font-family: var(--font-sohne);
   font-size: var(--text-body);
   line-height: var(--leading-body);
@@ -138,6 +140,12 @@ h2 em {
   font-style: italic;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-ink-black);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .container {
   max-width: var(--page-max-width);
   margin: 0 auto;
@@ -168,7 +176,7 @@ h2 em {
 }
 
 .heading-lg {
-  font-size: var(--text-heading-lg);
+  font-size: clamp(2.25rem, 1.4rem + 3.6vw, 4rem);
   letter-spacing: var(--tracking-heading-lg);
   margin-bottom: var(--spacing-24);
 }
@@ -194,6 +202,7 @@ h2 em {
   font-size: 16px;
   font-weight: 400;
   padding: 10px 20px;
+  min-height: 44px;
   border-radius: var(--radius-buttons);
   border: 1px solid transparent;
   cursor: pointer;
@@ -207,8 +216,10 @@ h2 em {
   border-color: var(--color-paper-white);
 }
 
-.btn-filled:hover {
-  opacity: 0.85;
+@media (hover: hover) and (pointer: fine) {
+  .btn-filled:hover {
+    opacity: 0.85;
+  }
 }
 
 .btn-ghost {
@@ -217,8 +228,10 @@ h2 em {
   border-color: var(--color-ink-black);
 }
 
-.btn-ghost:hover {
-  background: var(--surface-card-mist);
+@media (hover: hover) and (pointer: fine) {
+  .btn-ghost:hover {
+    background: var(--surface-card-mist);
+  }
 }
 
 .btn-sm {
@@ -238,9 +251,11 @@ h2 em {
   display: inline-block;
 }
 
-.text-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+@media (hover: hover) and (pointer: fine) {
+  .text-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
 }
 
 .text-link.arrow {
@@ -296,12 +311,14 @@ h2 em {
 .nav-links a {
   font-size: 16px;
   font-weight: 400;
-  padding: 2px 0;
+  padding: 12px 0;
   transition: opacity 0.15s ease;
 }
 
-.nav-links a:hover {
-  opacity: 0.6;
+@media (hover: hover) and (pointer: fine) {
+  .nav-links a:hover {
+    opacity: 0.6;
+  }
 }
 
 .nav-actions {
@@ -317,6 +334,7 @@ h2 em {
 .nav-actions .btn {
   padding: 8px 20px;
   font-size: 15px;
+  min-height: 40px;
 }
 
 .nav-burger {
@@ -361,7 +379,7 @@ h2 em {
 }
 
 .display {
-  font-size: var(--text-display);
+  font-size: clamp(2.75rem, 1.4rem + 6.2vw, 5.625rem);
   letter-spacing: var(--tracking-display);
   line-height: 1.15;
   margin-bottom: var(--spacing-24);
@@ -517,10 +535,11 @@ h2 em {
 
 .composer input {
   flex: 1;
+  min-width: 0;
   border: none;
   outline: none;
   font-family: var(--font-sohne);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-ink-black);
   min-width: 0;
 }
@@ -530,8 +549,8 @@ h2 em {
 }
 
 .icon-ghost {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-buttons);
   border: none;
   background: transparent;
@@ -543,13 +562,15 @@ h2 em {
   flex-shrink: 0;
 }
 
-.icon-ghost:hover {
-  background: var(--surface-card-mist);
+@media (hover: hover) and (pointer: fine) {
+  .icon-ghost:hover {
+    background: var(--surface-card-mist);
+  }
 }
 
 .send-btn {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-buttons);
   background: var(--color-ink-black);
   border: none;
@@ -897,8 +918,10 @@ h2 em {
   transition: background 0.15s ease;
 }
 
-.copy-btn:hover {
-  background: var(--color-paper-white);
+@media (hover: hover) and (pointer: fine) {
+  .copy-btn:hover {
+    background: var(--color-paper-white);
+  }
 }
 
 /* ============================================================
@@ -1231,16 +1254,6 @@ h2 em {
 }
 
 @media (max-width: 900px) {
-  .display {
-    font-size: var(--text-heading);
-    letter-spacing: var(--tracking-heading);
-  }
-
-  .heading-lg {
-    font-size: var(--text-heading);
-    letter-spacing: var(--tracking-heading);
-  }
-
   .grid-3,
   .steps,
   .setup-grid {
@@ -1271,9 +1284,17 @@ h2 em {
     right: 0;
     background: var(--color-paper-white);
     flex-direction: column;
-    padding: var(--spacing-24);
-    gap: var(--spacing-16);
+    padding: var(--spacing-16) var(--spacing-24) var(--spacing-24);
+    gap: var(--spacing-8);
     border-bottom: 1px solid #ececec;
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .nav-links.open {
@@ -1282,6 +1303,8 @@ h2 em {
 
   .nav-burger {
     display: flex;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .nav-actions .text-link {
