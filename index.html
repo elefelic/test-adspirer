@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adspirer — Engagez un gestionnaire de médias payants par IA</title>
+  <meta name="description" content="Donnez à chaque compte publicitaire un acheteur de médias IA : création de campagnes, surveillance quotidienne, propositions d'optimisation et reporting multi-plateformes — avec validation humaine sur chaque action." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;1,400&family=Inter:wght@400;430;450;480;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="logo" href="#" aria-label="Adspirer — accueil">
+        <span class="logo-dot"></span>
+        <span class="logo-text">Adspirer</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#features">Produit</a>
+        <a href="#how">Comment ça marche</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="text-link">Se connecter</a>
+        <a href="#" class="btn btn-filled">Commencer gratuitement</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Pour les entreprises, agences et petites équipes</p>
+
+        <div class="hero-artifact artifact-table reveal">
+          <div class="artifact-head">
+            <span class="artifact-title">Régions · Google Ads</span>
+            <span class="artifact-badge">En direct</span>
+          </div>
+          <table class="mini-table">
+            <thead>
+              <tr><th>Région</th><th>Dépenses</th><th>CPA</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Île-de-France</td><td>€4 812</td><td>€18,40</td></tr>
+              <tr><td>Provence-Alpes</td><td>€2 366</td><td>€21,10</td></tr>
+              <tr><td>Auvergne-Rhône</td><td>€1 984</td><td>€17,90</td></tr>
+              <tr><td>Nouvelle-Aquitaine</td><td>€1 102</td><td>€22,60</td></tr>
+              <tr><td>Hauts-de-France</td><td>€948</td><td>€19,30</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hero-artifact artifact-stat reveal">
+          <p class="stat-label">Inscriptions</p>
+          <p class="stat-value">2,4k</p>
+          <p class="stat-delta">↑ 5,5× vs la semaine dernière</p>
+          <svg class="sparkline" viewBox="0 0 160 56" preserveAspectRatio="none" aria-hidden="true">
+            <polyline fill="none" stroke="#5d2a1a" stroke-width="2" stroke-linecap="round"
+              points="2,50 24,46 46,48 68,40 90,34 112,28 134,16 158,6" />
+          </svg>
+        </div>
+
+        <h1 class="display reveal">Engagez un vrai média buyer <em>en IA</em>, pas un tableau de bord.</h1>
+
+        <p class="hero-sub reveal">
+          Adspirer construit les campagnes, traque le gaspillage, vérifie le pacing
+          et prépare le prochain coup — dans ChatGPT, Claude ou Slack.
+          Chaque action à fort impact reste soumise à votre validation.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#" class="btn btn-filled">Commencer gratuitement</a>
+          <a href="#" class="btn btn-ghost">Réserver une démo</a>
+        </div>
+
+        <p class="hero-note reveal">Gratuit pour toujours · 15 tâches/mois · Sans carte bancaire</p>
+
+        <div class="hero-artifact artifact-chart reveal">
+          <p class="stat-label">Activation</p>
+          <p class="stat-value">46,2%</p>
+          <svg class="chart-line" viewBox="0 0 220 72" preserveAspectRatio="none" aria-hidden="true">
+            <polyline fill="none" stroke="#5d2a1a" stroke-width="2" stroke-linecap="round"
+              points="4,66 40,60 76,52 112,44 148,30 184,18 216,8" />
+          </svg>
+          <div class="chart-months" aria-hidden="true">
+            <span>Août</span><span>Sept</span><span>Oct</span><span>Nov</span>
+          </div>
+        </div>
+
+        <div class="hero-artifact artifact-composer reveal">
+          <div class="composer">
+            <button class="icon-ghost" aria-label="Mention">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8" stroke-linecap="round"/></svg>
+            </button>
+            <input type="text" placeholder="Ask anything…" aria-label="Ask anything" />
+            <button class="icon-ghost" aria-label="Information">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 11v5" stroke-linecap="round"/><circle cx="12" cy="7.6" r="0.6" fill="currentColor"/></svg>
+            </button>
+            <button class="send-btn" aria-label="Envoyer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffffff" stroke-width="1.8"><path d="M4 12h14" stroke-linecap="round"/><path d="M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT IT DOES ============ -->
+    <section class="section section-fog" id="features">
+      <div class="container">
+        <p class="section-tag reveal">Ce que fait Adspirer</p>
+        <h2 class="heading-lg reveal">Moins de conseils. <em>Plus de travail</em> sur le compte.</h2>
+        <p class="section-sub reveal">
+          Construire des campagnes. Trouver le gaspillage. Vérifier le pacing.
+          Préparer le prochain mouvement. Chaque changement à fort impact reste à approuver par vous.
+        </p>
+
+        <div class="chat-demo reveal" role="img" aria-label="Exemple de conversation avec l'agent">
+          <div class="chat-thread">
+            <div class="chat-row user">
+              <div class="avatar avatar-blue">AF</div>
+              <div class="bubble">Construis la campagne search Q3 validée. Crée-la en pause.</div>
+            </div>
+            <div class="chat-row agent">
+              <div class="avatar avatar-green">AD</div>
+              <div class="bubble">
+                <strong>Campagne construite.</strong><br />
+                7 groupes d'annonces · 126 mots-clés · <strong class="paused">EN PAUSE</strong>
+              </div>
+            </div>
+            <div class="chat-row user">
+              <div class="avatar avatar-blue">AF</div>
+              <div class="bubble">Approuvé. Lance-la.</div>
+            </div>
+            <div class="chat-row agent">
+              <div class="avatar avatar-green">AD</div>
+              <div class="bubble">Campagne en ligne. Je surveille le pacing et le CPA.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card neutral reveal">
+            <p class="card-tag">Intégrations</p>
+            <h3 class="card-title">Là où vous travaillez</h3>
+            <p class="card-body">Briefez Adspirer dans ChatGPT, Claude, Slack ou par e-mail. Aucun nouveau tableau de bord à apprendre.</p>
+            <a href="#" class="text-link arrow">Voir les intégrations →</a>
+          </article>
+          <article class="card neutral reveal">
+            <p class="card-tag">Surveillance</p>
+            <h3 class="card-title">Vérifie chaque compte</h3>
+            <p class="card-body">Détecte les problèmes de pacing, de tracking et de performance avant qu'ils ne deviennent coûteux.</p>
+            <a href="#" class="text-link arrow">Découvrir la surveillance →</a>
+          </article>
+          <article class="card neutral reveal">
+            <p class="card-tag">Mémoire</p>
+            <h3 class="card-title">Se souvient du brief</h3>
+            <p class="card-body">Garde vos objectifs, garde-fous, règles de marque et décisions passées pour le prochain travail.</p>
+            <a href="#" class="text-link arrow">En savoir plus →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="container">
+        <p class="section-tag reveal">Comment ça marche</p>
+        <h2 class="heading-lg reveal">Du brief au travail <em>approuvé</em>.</h2>
+        <p class="section-sub reveal">Connectez les comptes. Posez les garde-fous. Adspirer fait le travail. Vous examinez ce qui compte.</p>
+
+        <div class="steps">
+          <article class="card neutral step reveal">
+            <p class="step-num">Étape 1 — Intégrer</p>
+            <h3 class="card-title">Connectez les comptes</h3>
+            <p class="card-body">Autorisez vos plateformes publicitaires. Adspirer n'a jamais besoin de vos mots de passe.</p>
+            <a href="#" class="btn btn-filled btn-sm">Démarrer gratuitement</a>
+          </article>
+          <article class="card neutral step reveal">
+            <p class="step-num">Étape 2 — Déléguer</p>
+            <h3 class="card-title">Assignez le travail</h3>
+            <p class="card-body">Demandez une campagne, un audit, un rapport ou une vérification récurrente. Le langage courant suffit.</p>
+            <a href="#" class="btn btn-ghost btn-sm">Voir le travail</a>
+          </article>
+          <article class="card peach step reveal">
+            <p class="step-num">Étape 3 — Superviser</p>
+            <h3 class="card-title">Validez le travail</h3>
+            <p class="card-body">Voyez ce qui a changé, pourquoi c'est important et ce qui nécessite une validation. Les nouvelles campagnes restent en pause.</p>
+            <a href="#" class="text-link arrow">Contactez l'équipe commerciale →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUICKSTART ============ -->
+    <section class="section section-fog">
+      <div class="container split">
+        <div class="split-text">
+          <p class="section-tag reveal">Votre espace IA</p>
+          <h2 class="heading-lg reveal">Connectez un agent publicitaire <em>cet après-midi</em>.</h2>
+          <p class="section-sub reveal">Choisissez votre espace IA. Suivez trois étapes. Commencez à déléguer le paid media.</p>
+          <a href="#" class="text-link arrow reveal">Ouvrir le guide complet →</a>
+        </div>
+        <div class="split-visual">
+          <div class="quickstart card neutral reveal">
+            <p class="quickstart-title">Démarrage rapide — Connecter Adspirer à ChatGPT</p>
+            <ol class="quickstart-list">
+              <li>
+                <span class="qs-num">1</span>
+                <div><strong>Trouvez Adspirer dans Apps</strong><br />Ouvrez ChatGPT Apps, cherchez « Adspirer » et sélectionnez le listing officiel.</div>
+              </li>
+              <li>
+                <span class="qs-num">2</span>
+                <div><strong>Connectez votre compte</strong><br />Cliquez sur Connecter, connectez-vous et choisissez les comptes publicitaires à rendre disponibles.</div>
+              </li>
+              <li>
+                <span class="qs-num">3</span>
+                <div><strong>Vérifiez la connexion</strong><br />Mentionnez @adspirer et demandez la liste de vos plateformes avant le premier travail.</div>
+              </li>
+            </ol>
+            <div class="prompt-chip">
+              <code>@adspirer vérifie mes plateformes publicitaires connectées</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLATFORMS / SETUP ============ -->
+    <section class="section">
+      <div class="container">
+        <p class="section-tag reveal">Configuration</p>
+        <h2 class="heading-lg reveal">Six plateformes. <em>Un opérateur</em>.</h2>
+        <p class="section-sub reveal">Adspirer travaille sur chaque compte depuis l'espace IA que votre équipe utilise déjà.</p>
+
+        <ul class="platforms reveal" aria-label="Plateformes prises en charge">
+          <li>Google Ads</li>
+          <li>Meta</li>
+          <li>TikTok</li>
+          <li>LinkedIn</li>
+          <li>Amazon</li>
+          <li>ChatGPT Ads</li>
+        </ul>
+
+        <div class="setup-grid">
+          <article class="setup-step card neutral reveal">
+            <span class="setup-num">1</span>
+            <h3 class="card-title">Liez vos plateformes</h3>
+            <p class="card-body">Connectez Google Ads, Meta et TikTok en un clic OAuth. Aucune configuration d'API — connectez-vous et liez.</p>
+          </article>
+          <article class="setup-step card neutral reveal">
+            <span class="setup-num">2</span>
+            <h3 class="card-title">Connectez votre IA</h3>
+            <p class="card-body">Ajoutez Adspirer à ChatGPT, Claude ou Gemini. Il apprend instantanément l'historique et la structure de vos comptes.</p>
+            <div class="mini-chat">
+              <p class="mini-chat-user">Lance une campagne PMax pour nos soldes d'été.</p>
+              <p class="mini-chat-agent"><strong>Campagne créée 🎉</strong> — En pause pour validation : mots-clés recherchés, copy rédigé, budget défini.</p>
+            </div>
+          </article>
+          <article class="setup-step card neutral reveal">
+            <span class="setup-num">3</span>
+            <h3 class="card-title">Briefez votre premier job</h3>
+            <p class="card-body">Tapez simplement. Recherche de mots-clés, lancement de campagne ou audit du ROAS de la semaine — l'IA s'occupe du reste, en pause jusqu'à votre validation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ASK AI ============ -->
+    <section class="section section-fog">
+      <div class="container narrow">
+        <p class="section-tag reveal">Demandez à l'IA</p>
+        <h2 class="heading-lg reveal">Demandez à l'IA ce qu'elle pense d'<em>Adspirer</em>.</h2>
+        <p class="section-sub reveal">Ne nous croyez pas sur parole. Choisissez votre IA préférée et demandez-lui son avis sur Adspirer.</p>
+        <div class="ask-cta reveal">
+          <a href="#" class="btn btn-ghost">Demander à ChatGPT</a>
+          <a href="#" class="btn btn-ghost">Demander à Claude</a>
+          <a href="#" class="btn btn-ghost">Demander à Perplexity</a>
+        </div>
+        <div class="prompt-card card neutral reveal">
+          <p class="prompt-label">Prompt suggéré</p>
+          <blockquote class="prompt-quote">
+            « J'évalue Adspirer — l'agent ad-ops IA qui pilote Google, Meta, TikTok, LinkedIn, Amazon et ChatGPT Ads depuis ChatGPT et Claude. Que fait-il, quels sont ses forces et faiblesses, et pour qui est-il fait ? »
+          </blockquote>
+          <button class="copy-btn" id="copyPrompt" type="button">Copier le prompt</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="section-tag reveal">Tarifs</p>
+        <h2 class="heading-lg reveal">Au prix du travail, <em>pas de votre budget</em>.</h2>
+        <p class="section-sub reveal">Payez pour le travail. Jamais un pourcentage des dépenses publicitaires. Commencez gratuitement, sans carte bancaire.</p>
+
+        <div class="billing-toggle reveal" role="group" aria-label="Période de facturation">
+          <button class="toggle-btn active" data-period="monthly" type="button">Mensuel</button>
+          <button class="toggle-btn" data-period="annual" type="button">Annuel <span class="save-pill">−18%</span></button>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="card neutral price-card reveal">
+            <h3 class="plan-name">Free Forever</h3>
+            <p class="plan-price"><span class="price" data-monthly="0€" data-annual="0€">0€</span><span class="per">/mois</span></p>
+            <p class="plan-note">Essayez gratuitement. Voyez le travail.</p>
+            <a href="#" class="btn btn-ghost btn-block">Commencer gratuitement</a>
+            <ul class="plan-features">
+              <li>15 tâches par mois — gratuit pour toujours</li>
+              <li>Les 6 plateformes incluses</li>
+              <li>Fonctionne dans ChatGPT, Claude &amp; plus</li>
+              <li>Sans carte bancaire</li>
+            </ul>
+          </article>
+
+          <article class="card neutral price-card reveal">
+            <h3 class="plan-name">Plus</h3>
+            <p class="plan-price"><span class="price" data-monthly="40€" data-annual="33€">40€</span><span class="per">/mois</span></p>
+            <p class="plan-note">Pour une marque, un rythme régulier.</p>
+            <a href="#" class="btn btn-filled btn-block">Choisir Plus</a>
+            <ul class="plan-features">
+              <li>150 tâches par mois</li>
+              <li>Création de campagnes sur toutes les plateformes</li>
+              <li>Tableaux de bord de performance dans le chat</li>
+              <li>Intégrations GA4 &amp; Klaviyo</li>
+            </ul>
+          </article>
+
+          <article class="card neutral price-card featured reveal">
+            <p class="plan-flag">Le plus populaire</p>
+            <h3 class="plan-name">Pro</h3>
+            <p class="plan-price"><span class="price" data-monthly="83€" data-annual="70€">83€</span><span class="per">/mois</span></p>
+            <p class="plan-note">76× moins cher qu'un recrutement interne.</p>
+            <a href="#" class="btn btn-filled btn-block">Choisir Pro</a>
+            <ul class="plan-features">
+              <li>600 tâches par mois</li>
+              <li>Optimisation IA &amp; opérations en masse</li>
+              <li>Audits approfondis &amp; diagnostics</li>
+              <li>≈120 heures de travail spécialisé/mois</li>
+            </ul>
+          </article>
+
+          <article class="card neutral price-card reveal">
+            <h3 class="plan-name">Max</h3>
+            <p class="plan-price"><span class="price" data-monthly="167€" data-annual="140€">167€</span><span class="per">/mois</span></p>
+            <p class="plan-note">Pour les équipes qui gèrent un vrai volume.</p>
+            <a href="#" class="btn btn-ghost btn-block">Choisir Max</a>
+            <ul class="plan-features">
+              <li>3 000 tâches par mois</li>
+              <li>5 comptes actifs par plateforme</li>
+              <li>Sous-agents pour un travail à l'échelle du portefeuille</li>
+              <li>Support prioritaire — SLA 24 h</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="card neutral enterprise reveal">
+          <div class="enterprise-text">
+            <h3 class="card-title">Agences &amp; Enterprise</h3>
+            <p class="card-body">
+              Une équipe ad-ops IA complète, conçue autour de vos marques et clients —
+              pour les entreprises qui activent des agents IA en interne et les agences
+              qui servent plus de clients sans embaucher.
+            </p>
+            <ul class="plan-features enterprise-features">
+              <li>Un siège dans votre espace Slack et sa propre adresse e-mail</li>
+              <li>Decks, landing pages &amp; sites construits pour vous</li>
+              <li>Compétences ad-ops personnalisées par marque ou client</li>
+              <li>Usage illimité (usage raisonnable) &amp; onboarding dédié</li>
+            </ul>
+          </div>
+          <div class="enterprise-cta">
+            <p class="plan-price"><span class="price">Sur mesure</span></p>
+            <a href="#" class="btn btn-filled">Parlons-en</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-fog" id="faq">
+      <div class="container narrow">
+        <p class="section-tag reveal">FAQ</p>
+        <h2 class="heading-lg reveal">Les questions <em>qu'on nous pose</em>.</h2>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Adspirer remplace-t-il mon équipe media buyer ?<span class="faq-caret" aria-hidden="true"></span></summary>
+            <p>Non. Il supprime le travail répétitif — builds, vérifications, reports — pour que votre équipe se concentre sur la stratégie. Chaque action à fort impact attend votre validation.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Dois-je donner mes mots de passe publicitaires ?<span class="faq-caret" aria-hidden="true"></span></summary>
+            <p>Jamais. La connexion se fait via OAuth : vous autorisez l'accès en un clic et vous pouvez le révoquer à tout moment depuis votre espace.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Qu'est-ce qu'une « tâche » exactement ?<span class="faq-caret" aria-hidden="true"></span></summary>
+            <p>Une tâche = un travail accompli : une campagne construite, un audit réalisé, un rapport hebdomadaire ou une vérification de compte.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Les campagnes peuvent-elles partir en ligne sans mon accord ?<span class="faq-caret" aria-hidden="true"></span></summary>
+            <p>Non. Toute nouvelle campagne est créée en pause. Rien ne va en ligne sans votre approbation explicite.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quelles plateformes sont prises en charge ?<span class="faq-caret" aria-hidden="true"></span></summary>
+            <p>Google Ads, Meta, TikTok, LinkedIn, Amazon et ChatGPT Ads — les six inclus dans chaque plan, y compris gratuit.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="section final-cta">
+      <div class="container narrow center">
+        <h2 class="heading-lg reveal">Mettez Adspirer sur votre <em>premier compte</em>.</h2>
+        <p class="section-sub reveal">Connectez une plateforme. Donnez un vrai travail à Adspirer. Validez le travail avant toute mise en ligne.</p>
+        <div class="hero-cta reveal">
+          <a href="#" class="btn btn-filled">Démarrer gratuitement</a>
+          <a href="#" class="btn btn-ghost">Contacter l'équipe commerciale</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#">
+          <span class="logo-dot"></span>
+          <span class="logo-text">Adspirer</span>
+        </a>
+        <p class="footer-tagline">L'agent IA qui gère vos médias payants, avec votre validation sur chaque action.</p>
+      </div>
+      <nav class="footer-col" aria-label="Produit">
+        <p class="footer-heading">Produit</p>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#">Intégrations</a>
+        <a href="#">Changelog</a>
+      </nav>
+      <nav class="footer-col" aria-label="Ressources">
+        <p class="footer-heading">Ressources</p>
+        <a href="#">Documentation</a>
+        <a href="#">Guide de démarrage</a>
+        <a href="#">Blog</a>
+        <a href="#">Statut</a>
+      </nav>
+      <nav class="footer-col" aria-label="Entreprise">
+        <p class="footer-heading">Entreprise</p>
+        <a href="#">À propos</a>
+        <a href="#">Carrières</a>
+        <a href="#">Contact</a>
+        <a href="#">Mentions légales</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2025 Adspirer. Tous droits réservés.</p>
+      <div class="footer-legal">
+        <a href="#">Confidentialité</a>
+        <a href="#">CGU</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
